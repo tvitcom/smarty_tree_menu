@@ -1,0 +1,11 @@
+# environment *nix
+.*
+!.gitignore
+*~
+
+# netbeans project files
+nbproject
+
+# smarty templating project
+cache/*
+templates_c/*
