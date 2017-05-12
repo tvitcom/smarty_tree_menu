@@ -24,7 +24,7 @@ class TreeMysqliManager implements HierInterface {
     public static function getInstance()
     {
         if (!self::$instance) {            
-            self::$instance = new mysqli('p:localhost','holbi', 'pass_to_holbi','holbi','33306');
+            self::$instance = new mysqli('p:localhost','treemenu', 'pass_to_treemenu','treemenu','33306');
             self::$instance->set_charset("latin1");
         }
         return self::$instance;

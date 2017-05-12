@@ -29,7 +29,7 @@ class TreePdoManager implements HierInterface {
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES   => false,
             );            
-            self::$instance = new PDO('mysql:host=localhost;dbname=holbi;port=33306;charset=utf8', 'holbi', 'pass_to_holbi',$opt);
+            self::$instance = new PDO('mysql:host=localhost;dbname=treemenu;port=33306;charset=utf8', 'treemenu', 'pass_to_treemenu',$opt);
         }
         return self::$instance;
     }
